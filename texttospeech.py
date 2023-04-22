@@ -101,7 +101,7 @@ clear_button.grid(row=0,column=0)
 convert_button = Button(button_frame,text="Convert", command=Convert)
 convert_button.grid(row=0, column=1, padx=20)
 
-#Creating browse button to find location to store the mp4 file
+#Creating browse button to find location to store the mp4 file.
 browse_button = Button(button_frame, text="Browse", command=Directory_path)
 browse_button.grid(row=0, column=2)
 
