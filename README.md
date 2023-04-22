@@ -4,6 +4,10 @@ Converts the text to mp4 file
 To convert .py to .exe file, use "auto-py-to-exe".
 If you don't have it installed locally, use command "pip install auto-py-to-exe" on terminal.
 
+Opening window of "auto-py-to-exe":
+1. Open terminal
+2. Type command "pip install auto-py-to-exe".
+
 Configurting details in "auto-py-to-exe":
 1. Select the script location i.e. location where .py file is stored.
 2. Select "One File" option.
