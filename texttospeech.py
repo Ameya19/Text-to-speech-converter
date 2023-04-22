@@ -4,6 +4,7 @@ from tkinter import *
 from tkinter import filedialog,ttk
 import os.path
 
+#Opening window of Tkinter
 root = Tk()
 root.title("Text To Speech Converter")
 root.iconbitmap("D:\\Python\\text-to-speech.ico")
@@ -56,7 +57,7 @@ def Directory_path():
     filename = filedialog.askdirectory()
     location_textbox.insert(END,filename)
 
-
+#Adding textbox to interface
 my_text = Text(root, width=60, height=20, font="Helvetica,14")
 my_text.pack(pady=20)
 
@@ -88,15 +89,19 @@ pb.grid(column=0, row=0, columnspan=2, padx=10, pady=20)
 my_label = Label(root, text="")
 my_label.pack(pady=10)
 
+#Creating frame for buttons in interface
 button_frame = Frame(root)
 button_frame.pack()
 
+#Creating clear button
 clear_button = Button(button_frame, text="Clear", command=Clear)
 clear_button.grid(row=0,column=0)
 
+#Creating convert button
 convert_button = Button(button_frame,text="Convert", command=Convert)
 convert_button.grid(row=0, column=1, padx=20)
 
+#Creating browse button to find location to store the mp4 file
 browse_button = Button(button_frame, text="Browse", command=Directory_path)
 browse_button.grid(row=0, column=2)
 
